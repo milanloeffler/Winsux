@@ -1,0 +1,17 @@
+#!/bin/bash
+# PaxBoy Package Manager Script Version 0.0.0
+# Lukas Flügel - 08.05.2019
+param=$1
+if [ "$1" = "morpax" ]; then
+    param="install"
+fi
+if [ "$1" = "lespax" ]; then
+    param="uninstall"
+fi
+if [ "$1" = "newpax" ]; then
+    param="update"
+fi
+if [ "$1" = "findpax" ]; then
+    param="whereis"
+fi
+jarvis $param $2 $3 $4 $5 $6 $7 $8 $9
